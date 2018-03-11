@@ -17,16 +17,16 @@
   </head>
   <body>
     <!-- Site Header -->
-    <header class="site-header" role="banner">
+    <header class="site-header" role="banner" aria-label="site wide banner">
       <div class="container">
         <!-- Site Navigation -->
-        <nav class="site-navigation" role="navigation" aria-label="header navigation menu">
-          <ul class="site-header-left">
+        <nav class="site-navigation" role="navigation" aria-label="main navigation menu">
+          <ul class="site-header-left" aria-label="left side of the header">
             <li>
               <img src="images/explorer-logo-blue.svg" alt="logo"/>
             </li>
           </ul>
-          <ul class="site-header-center">
+          <ul class="site-header-center" aria-label="center of the header">
             <li>
               <a href="#">Menu</a>
             </li>
@@ -43,21 +43,21 @@
               <a href="#">Contact</a>
             </li>
           </ul>
-          <ul class="site-header-right">
+          <ul class="site-header-right" aria-label="right side of the header">
             <li>
-              <a href="#" class="button button-primary">Cart(0)</a>
+              <a href="#" class="button button-primary" aria-label="button to add itme to the shopping cart">Cart(0)</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
     <!-- Site Main Content -->
-    <main class="main-content-wrapper" role="main">
+    <main class="main-content-wrapper" role="main" aria-label="main contnet">
       <div class="container">
         <!-- Article Section -->
-        <article class=" main-content-container">
+        <article class="main-content-container">
           <!-- Article Content Header -->
-          <div class="main-content-header">
+          <header class="main-content-header" aria-labelledby="page-hero-title">
             <div class="chip">
               <div class="chip-img-container">
                 <img src="images/avatar.png">
@@ -65,7 +65,7 @@
             </div>
             <h1 id="page-hero-title">Preparing yourself for your upcoming European vacation</h1>
             <p class="author">By Amanda Jensen</p>
-          </div>
+          </header>
           <img src="images/eiffel-tower.jpg" alt="Eiffel Tower">
           <!-- Article Content -->
           <div class="main-content-section">
@@ -91,7 +91,7 @@
           </div>
           <div class="main-content-section">
             <!-- Article Comments -->
-            <article class="article-comment-section">
+            <article class="article-comment-section" aria-labelledby="comments">
               <div>
                 <h3 id="comments">Comments</h3>
               </div>
@@ -106,11 +106,11 @@
               </div>
             </article>
             <!-- Article Comment Form -->
-            <article class="article-comment-form-section">
+            <footer class="article-comment-form-section" aria-labelledby="add-comment">
               <div>
                 <h3 id="add-comment">Add a comment</h3>
               </div>
-              <form class="article-comment-form">
+              <form class="article-comment-form" aria-label="form to add comments">
                 <fieldset>
                   <div class="form-item">
                     <label for="full-name">Full Name</label>
@@ -127,26 +127,26 @@
                     <textarea name="message" id="message"></textarea>
                   </div>
                 </fieldset>
-                <div class="submit-button-container">
+                <div class="submit-button-container" aria-label="Click button to add comments">
                   <input type="submit" name="submit" class="button button-primary">
                 </div>
               </form>
-            </article>
+            </footer>
           </div>
         </article>
       </div>
     </main>
     <!-- Site Footer -->
-    <footer class="footer clearfix" role="contentinfo">
+    <footer class="footer clearfix" role="contentinfo" aria-label="site wide footer">
       <div class="container">
         <!-- Site Footer Nav -->
         <nav class="footer-navigation" role="navigation" aria-label="footer navigation menu">
-          <ul class="footer-left">
+          <ul class="footer-left" aria-label="left part of footer">
             <li>
               <img src="images/explorer-logo.svg" />
             </li>
           </ul>
-          <ul class="footer-right">
+          <ul class="footer-right" aria-label="right part of footer">
             <li>
               <a href="#">Home</a>
             </li>
